@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-AdvancedSteamSessions.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE\ShooterRooms\Intermediate\Build\Win64\x64\ShooterRoomsEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\Development\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\Development\AdvancedSteamSessions\Default.rc2.res"
+/OUT:"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\Development\AdvancedSteamSessions\UnrealEditor-AdvancedSteamSessions.lib"
