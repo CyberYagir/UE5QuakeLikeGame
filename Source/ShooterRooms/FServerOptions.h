@@ -29,7 +29,8 @@ public:
 	FString mapName = FString("Map1");
 	UPROPERTY(EditAnyWhere, BluePrintReadWrite)
 	EGameType gameType = EGameType::GT_DM;
-
+	UPROPERTY(EditAnyWhere, BluePrintReadWrite)
+	bool isLan = false;
 
 
 public:

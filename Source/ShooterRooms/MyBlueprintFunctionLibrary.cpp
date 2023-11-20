@@ -4,7 +4,8 @@
 #include "MyBlueprintFunctionLibrary.h"
 #include "Misc/Paths.h"
 #include "Serialization/JsonSerializer.h"
-#include "JsonObjectConverter.h"
+#include "JsonObjectConverter.h"	
+#include "GameFramework/GameUserSettings.h"
 
 FString UMyBlueprintFunctionLibrary::ReadFile(FString path, bool& outSuccess)
 {
@@ -101,6 +102,12 @@ void UMyBlueprintFunctionLibrary::SetServerConfig(FString path, FServerOptions o
 
 	WriteJson(path, JsonObject, outSuccess);
 
+}
+
+void UMyBlueprintFunctionLibrary::DisableRendering(AActor* actor)
+{
+	UGameViewportClient* ViewportClient = actor->GetWorld()->GetGameViewport();
+	ViewportClient->bDisableWorldRendering = true;
 }
 
 

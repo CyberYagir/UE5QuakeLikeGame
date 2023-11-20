@@ -6,9 +6,9 @@
 /NAME:"UnrealEditor-AdvancedSessions-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\x64\VRExpPluginExampleEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp17.h.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.1.cpp.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.2.cpp.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.3.cpp.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Default.rc2.res"
-/OUT:"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\UnrealEditor-AdvancedSessions-Win64-DebugGame.lib"
+"D:\UE\ShooterRooms\Intermediate\Build\Win64\x64\ShooterRoomsEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp20.InclOrderUnreal5_0.h.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.1.cpp.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.2.cpp.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.3.cpp.obj"
+"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\Default.rc2.res"
+/OUT:"D:\UE\ShooterRooms\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSessions\UnrealEditor-AdvancedSessions-Win64-DebugGame.lib"

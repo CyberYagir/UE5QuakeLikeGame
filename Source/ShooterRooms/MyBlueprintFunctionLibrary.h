@@ -27,4 +27,6 @@ public:
 	static FServerOptions GetServerConfig(FString path, bool& outSuccess);
 	UFUNCTION(BlueprintCallable)
 	static void SetServerConfig(FString path, FServerOptions options, bool& outSuccess);
+	UFUNCTION(BlueprintCallable)
+	static void DisableRendering(AActor* actor);
 };
