@@ -104,10 +104,54 @@ void UMyBlueprintFunctionLibrary::SetServerConfig(FString path, FServerOptions o
 
 }
 
+FPlayerOptions UMyBlueprintFunctionLibrary::GetPlayerConfig(FString path, bool& outSuccess)
+{
+	TSharedPtr<FJsonObject> jsonObject = ReadJson(path, outSuccess);
+	if (!outSuccess) {
+		return FPlayerOptions();
+	}
+
+	FPlayerOptions ret;
+
+
+	if (!FJsonObjectConverter::JsonObjectToUStruct<FPlayerOptions>(jsonObject.ToSharedRef(), &ret)) {
+		outSuccess = false;
+		return FPlayerOptions();
+	}
+
+	outSuccess = true;
+
+	return ret;
+}
+
+void UMyBlueprintFunctionLibrary::SetPlayerConfig(FString path, FPlayerOptions options, bool& outSuccess)
+{
+
+	TSharedPtr<FJsonObject> JsonObject = FJsonObjectConverter::UStructToJsonObject(options);
+
+	if (JsonObject == nullptr) {
+		outSuccess = false;
+
+		return;
+	}
+
+	WriteJson(path, JsonObject, outSuccess);
+}
+
+
+
 void UMyBlueprintFunctionLibrary::DisableRendering(AActor* actor)
 {
 	UGameViewportClient* ViewportClient = actor->GetWorld()->GetGameViewport();
 	ViewportClient->bDisableWorldRendering = true;
+}
+
+void UMyBlueprintFunctionLibrary::EnableRendering(AActor* actor)
+{
+	UGameViewportClient* ViewportClient = actor->GetWorld()->GetGameViewport();
+	if (ViewportClient->bDisableWorldRendering) {
+		ViewportClient->bDisableWorldRendering = false;
+	}
 }
 
 

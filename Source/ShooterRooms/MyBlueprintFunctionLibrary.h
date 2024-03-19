@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "FServerOptions.h"
+#include "FPlayerOptions.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
 class FJsonObject;
@@ -29,4 +30,13 @@ public:
 	static void SetServerConfig(FString path, FServerOptions options, bool& outSuccess);
 	UFUNCTION(BlueprintCallable)
 	static void DisableRendering(AActor* actor);
+
+	UFUNCTION(BlueprintCallable)
+	static void EnableRendering(AActor* actor);
+
+
+	UFUNCTION(BlueprintCallable)
+	static FPlayerOptions GetPlayerConfig(FString path, bool& outSuccess);
+	UFUNCTION(BlueprintCallable)
+	static void SetPlayerConfig(FString path, FPlayerOptions options, bool& outSuccess);
 };
